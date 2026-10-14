@@ -1,0 +1,9 @@
+{
+  "builtAt": "2026-10-14T08:20:05.461Z",
+  "source": "/mnt/user-data/uploads/tesseractdb-develop/src/parser",
+  "engineVersion": null,
+  "grammarSha256": "31de8ab1860a938b0274d287a6f3bed0fc4e80f3cdcb31f0f07a1c9f1f6cf655",
+  "lexerSha256": "eb85dd08d4d02e53d2776ed37563dee095da9c028a8dcfc6a2b2031932e767bc",
+  "tokens": 646,
+  "hints": 33
+}

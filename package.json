@@ -1,0 +1,35 @@
+{
+  "name": "coradb-sqlsyntaxchecker-wasm",
+  "version": "0.1.0",
+  "description": "Offline syntax check for CoraDB SQL: the engine's own grammar and lexer, compiled to WebAssembly. Browser and Node, no server needed.",
+  "keywords": ["coradb", "sql", "syntax", "parser", "validator", "wasm"],
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./coradb-sqlsyntaxchecker.wasm": "./coradb-sqlsyntaxchecker.wasm",
+    "./build-info.json": "./build-info.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "coradb-sqlsyntaxchecker.wasm",
+    "build-info.json",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build/build.mjs",
+    "test": "node --test test/coradb-sqlsyntaxchecker.test.mjs"
+  }
+}

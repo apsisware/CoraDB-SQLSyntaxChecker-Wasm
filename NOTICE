@@ -1,0 +1,13 @@
+CoraDB-SQLSyntaxChecker-Wasm
+
+This product includes software developed as part of the CoraDB engine:
+  Copyright 2008 Search Solution Corporation
+  Copyright 2016 CORADB Corporation
+CORADB is a registered trademark of CORADB Corporation.
+
+coradb-sqlsyntaxchecker.wasm is compiled from the engine's SQL grammar (src/parser/
+corasql_grammar.y) and lexer (src/parser/corasql_lexer.l), licensed under
+the Apache License, Version 2.0. They were modified for this package: the
+grammar's C actions were removed so that it only accepts or rejects text,
+and the lexer was given a stand-in for the parser context it uses. See
+build/generate.mjs.
