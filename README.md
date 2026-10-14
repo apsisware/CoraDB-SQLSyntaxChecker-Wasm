@@ -81,10 +81,7 @@ checker.check(sql, { ansiQuotes: true, noBackslashEscapes: true, pipesAsConcat: 
 
 ## Limits
 
-- **PL/CSQL bodies** (`CREATE PROCEDURE … AS BEGIN … END`) are not read by
-  this grammar: the engine compiles them separately. Leave them out of what
-  you check. Java procedures (`AS LANGUAGE JAVA …`) check normally.
-- The engine also refuses a few things after parsing them (limits, invalid
+- The engine refuses a few things after parsing them (limits, invalid
   combinations). Those checks live in the C code the grammar runs, which is
   not part of this module.
 
@@ -105,5 +102,4 @@ are turned into the module is described at the top of `build/generate.mjs`.
 
 ## License
 
-Apache License 2.0, as the CoraDB engine it is built from. See `LICENSE` and
-`NOTICE`.
+MIT. See `LICENSE`.
